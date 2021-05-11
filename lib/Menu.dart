@@ -31,9 +31,6 @@ class _MenuState extends State<Menu> {
           child: Column(
             children: [
               cardsMenu('meal', 'Meal'),
-              SizedBox(
-                height: 5,
-              ),
               cardsMenu('pizza', 'Pizza'),
               cardsMenu('burger', 'Burger'),
               cardsMenu('sushi', 'Sushi'),
@@ -50,6 +47,7 @@ class _MenuState extends State<Menu> {
 
   Widget cardsMenu(image, text) {
     return Card(
+      margin: EdgeInsets.only(bottom:10),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       shadowColor: Colors.black26,
       elevation: 15,
